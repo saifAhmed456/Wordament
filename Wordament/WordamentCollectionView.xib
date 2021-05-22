@@ -10,31 +10,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordamentCollectionView" customModule="Wordament" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordamentCollectionView" customModule="Wordament" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="TkG-eU-dsz" id="xlP-yX-Q9u"/>
+                <outlet property="stackView" destination="djh-lD-ZmL" id="xwk-Y8-JUP"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="p4D-0w-S2Y">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TkG-eU-dsz">
-                    <rect key="frame" x="28" y="229" width="358" height="448"/>
-                    <color key="backgroundColor" red="1" green="0.32845984719999999" blue="0.27338166380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="djh-lD-ZmL">
+                    <rect key="frame" x="21" y="219.5" width="372" height="467"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TkG-eU-dsz">
+                            <rect key="frame" x="0.0" y="0.0" width="372" height="467"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="xrX-Bp-Moc"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="rZ2-Tv-ySA">
+                                <size key="itemSize" width="75" height="75"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="TkG-eU-dsz" secondAttribute="height" multiplier="0.8" id="ccZ-lt-9nc"/>
+                        <constraint firstItem="TkG-eU-dsz" firstAttribute="centerY" secondItem="djh-lD-ZmL" secondAttribute="centerY" id="KKW-C3-h0j"/>
+                        <constraint firstItem="TkG-eU-dsz" firstAttribute="centerX" secondItem="djh-lD-ZmL" secondAttribute="centerX" id="M4P-FO-9ld"/>
+                        <constraint firstAttribute="height" secondItem="djh-lD-ZmL" secondAttribute="width" multiplier="54/43" id="e9g-Uk-xbQ"/>
+                        <constraint firstItem="TkG-eU-dsz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="djh-lD-ZmL" secondAttribute="top" priority="750" id="o7c-o5-gaT"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rZ2-Tv-ySA">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="TkG-eU-dsz" firstAttribute="centerX" secondItem="7dy-ub-ncs" secondAttribute="centerX" id="btf-d3-4BK"/>
-                <constraint firstItem="TkG-eU-dsz" firstAttribute="centerY" secondItem="7dy-ub-ncs" secondAttribute="centerY" id="drq-WT-f3c"/>
-                <constraint firstItem="TkG-eU-dsz" firstAttribute="height" secondItem="p4D-0w-S2Y" secondAttribute="height" multiplier="0.5" id="poc-2P-L2t"/>
+                <constraint firstItem="djh-lD-ZmL" firstAttribute="top" secondItem="7dy-ub-ncs" secondAttribute="top" priority="740" id="PTq-Yr-apk"/>
+                <constraint firstItem="djh-lD-ZmL" firstAttribute="centerX" secondItem="7dy-ub-ncs" secondAttribute="centerX" id="XUx-hx-pi9"/>
+                <constraint firstItem="7dy-ub-ncs" firstAttribute="bottom" secondItem="djh-lD-ZmL" secondAttribute="bottom" priority="740" id="bbY-29-JxR"/>
+                <constraint firstItem="djh-lD-ZmL" firstAttribute="leading" secondItem="7dy-ub-ncs" secondAttribute="leading" constant="21" id="eRa-8C-qxG"/>
+                <constraint firstItem="djh-lD-ZmL" firstAttribute="centerY" secondItem="7dy-ub-ncs" secondAttribute="centerY" id="gUu-X8-HfM"/>
+                <constraint firstItem="7dy-ub-ncs" firstAttribute="trailing" secondItem="djh-lD-ZmL" secondAttribute="trailing" constant="21" id="kY2-rv-egx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="7dy-ub-ncs"/>
             <point key="canvasLocation" x="134.78260869565219" y="140.625"/>

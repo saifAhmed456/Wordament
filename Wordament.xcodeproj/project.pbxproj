@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA369E25524EFD5325A882C /* Pods_WordamentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2CCB22B5916FA33E12699 /* Pods_WordamentTests.framework */; };
+		386DA3091219ABDC769510CE /* Pods_Wordament.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6D79FD84C05897C21EB008 /* Pods_Wordament.framework */; };
+		834BEE41AEEDB95FAF84386C /* Pods_WordamentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABA70C58E9D242561144F4B /* Pods_WordamentUITests.framework */; };
 		B001BD9622F947CA00091C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BD9522F947CA00091C0B /* AppDelegate.swift */; };
 		B001BD9822F947CA00091C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BD9722F947CA00091C0B /* ViewController.swift */; };
 		B001BD9B22F947CA00091C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B001BD9922F947CA00091C0B /* Main.storyboard */; };
@@ -14,6 +17,18 @@
 		B001BDA022F947CC00091C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B001BD9E22F947CC00091C0B /* LaunchScreen.storyboard */; };
 		B001BDAB22F947CC00091C0B /* WordamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDAA22F947CC00091C0B /* WordamentTests.swift */; };
 		B001BDB622F947CC00091C0B /* WordamentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDB522F947CC00091C0B /* WordamentUITests.swift */; };
+		B001BDC422F94AB300091C0B /* WordamentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDC322F94AB300091C0B /* WordamentCollectionView.swift */; };
+		B001BDC622F94D3200091C0B /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDC522F94D3200091C0B /* NibLoadable.swift */; };
+		B001BDC822F94D8500091C0B /* WordamentCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B001BDC722F94D8500091C0B /* WordamentCollectionView.xib */; };
+		B001BDCA22F95B0100091C0B /* WordamentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDC922F95B0100091C0B /* WordamentModel.swift */; };
+		B001BDCC22F9806800091C0B /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDCB22F9806800091C0B /* TrieNode.swift */; };
+		B001BDCE22F9AA0500091C0B /* WordamentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDCD22F9AA0500091C0B /* WordamentCollectionViewCell.swift */; };
+		B001BDD022F9B62200091C0B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDCF22F9B62200091C0B /* Colors.swift */; };
+		B001BDD222FC019E00091C0B /* WordamentSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001BDD122FC019E00091C0B /* WordamentSolver.swift */; };
+		B06EB4D02322640300102D77 /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06EB4CF2322640300102D77 /* SolutionViewController.swift */; };
+		B06EB4D2232265FA00102D77 /* SolutionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06EB4D1232265FA00102D77 /* SolutionViewController.storyboard */; };
+		B0BAFD9D232656B400651211 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAFD9C232656B400651211 /* SoundManager.swift */; };
+		B0BAFDA123278A8B00651211 /* right_tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0BAFDA023278A8B00651211 /* right_tone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E00C5BAAC34AC9B1E00623B /* Pods-Wordament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordament.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wordament/Pods-Wordament.release.xcconfig"; sourceTree = "<group>"; };
+		246FFBA3FC85B1BF8D84E2F1 /* Pods-WordamentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordamentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordamentTests/Pods-WordamentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6D79FD84C05897C21EB008 /* Pods_Wordament.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordament.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E642122538E51935288A812 /* Pods-WordamentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordamentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordamentUITests/Pods-WordamentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6242AE15078A9928EB15CEBB /* Pods-Wordament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordament.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordament/Pods-Wordament.debug.xcconfig"; sourceTree = "<group>"; };
+		69B2CCB22B5916FA33E12699 /* Pods_WordamentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordamentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B001BD9222F947CA00091C0B /* Wordament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B001BD9522F947CA00091C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B001BD9722F947CA00091C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,21 @@
 		B001BDB122F947CC00091C0B /* WordamentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordamentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B001BDB522F947CC00091C0B /* WordamentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordamentUITests.swift; sourceTree = "<group>"; };
 		B001BDB722F947CC00091C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B001BDC322F94AB300091C0B /* WordamentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordamentCollectionView.swift; sourceTree = "<group>"; };
+		B001BDC522F94D3200091C0B /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		B001BDC722F94D8500091C0B /* WordamentCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordamentCollectionView.xib; sourceTree = "<group>"; };
+		B001BDC922F95B0100091C0B /* WordamentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordamentModel.swift; sourceTree = "<group>"; };
+		B001BDCB22F9806800091C0B /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		B001BDCD22F9AA0500091C0B /* WordamentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordamentCollectionViewCell.swift; sourceTree = "<group>"; };
+		B001BDCF22F9B62200091C0B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B001BDD122FC019E00091C0B /* WordamentSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordamentSolver.swift; sourceTree = "<group>"; };
+		B06EB4CF2322640300102D77 /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		B06EB4D1232265FA00102D77 /* SolutionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SolutionViewController.storyboard; sourceTree = "<group>"; };
+		B0BAFD9C232656B400651211 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		B0BAFDA023278A8B00651211 /* right_tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right_tone.mp3; sourceTree = "<group>"; };
+		D9B0CC8F659A0B3971CFF20F /* Pods-WordamentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordamentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordamentUITests/Pods-WordamentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EABA70C58E9D242561144F4B /* Pods_WordamentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordamentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F921CCC2BC22C7F0D582D19F /* Pods-WordamentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordamentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordamentTests/Pods-WordamentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386DA3091219ABDC769510CE /* Pods_Wordament.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA369E25524EFD5325A882C /* Pods_WordamentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834BEE41AEEDB95FAF84386C /* Pods_WordamentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +120,8 @@
 				B001BDA922F947CC00091C0B /* WordamentTests */,
 				B001BDB422F947CC00091C0B /* WordamentUITests */,
 				B001BD9322F947CA00091C0B /* Products */,
+				DB56BAB52D101291D553BB2E /* Pods */,
+				C3D52AC897D937B479FFAC8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +140,21 @@
 			children = (
 				B001BD9522F947CA00091C0B /* AppDelegate.swift */,
 				B001BD9722F947CA00091C0B /* ViewController.swift */,
+				B001BDCF22F9B62200091C0B /* Colors.swift */,
 				B001BD9922F947CA00091C0B /* Main.storyboard */,
 				B001BD9C22F947CC00091C0B /* Assets.xcassets */,
 				B001BD9E22F947CC00091C0B /* LaunchScreen.storyboard */,
+				B001BDC322F94AB300091C0B /* WordamentCollectionView.swift */,
+				B0BAFD9C232656B400651211 /* SoundManager.swift */,
+				B001BDD122FC019E00091C0B /* WordamentSolver.swift */,
+				B06EB4CF2322640300102D77 /* SolutionViewController.swift */,
+				B06EB4D1232265FA00102D77 /* SolutionViewController.storyboard */,
+				B001BDCD22F9AA0500091C0B /* WordamentCollectionViewCell.swift */,
+				B001BDC722F94D8500091C0B /* WordamentCollectionView.xib */,
+				B001BDC922F95B0100091C0B /* WordamentModel.swift */,
+				B001BDCB22F9806800091C0B /* TrieNode.swift */,
+				B001BDC522F94D3200091C0B /* NibLoadable.swift */,
+				B0BAFDA023278A8B00651211 /* right_tone.mp3 */,
 				B001BDA122F947CC00091C0B /* Info.plist */,
 			);
 			path = Wordament;
@@ -125,6 +178,29 @@
 			path = WordamentUITests;
 			sourceTree = "<group>";
 		};
+		C3D52AC897D937B479FFAC8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6D79FD84C05897C21EB008 /* Pods_Wordament.framework */,
+				69B2CCB22B5916FA33E12699 /* Pods_WordamentTests.framework */,
+				EABA70C58E9D242561144F4B /* Pods_WordamentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB56BAB52D101291D553BB2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6242AE15078A9928EB15CEBB /* Pods-Wordament.debug.xcconfig */,
+				0E00C5BAAC34AC9B1E00623B /* Pods-Wordament.release.xcconfig */,
+				246FFBA3FC85B1BF8D84E2F1 /* Pods-WordamentTests.debug.xcconfig */,
+				F921CCC2BC22C7F0D582D19F /* Pods-WordamentTests.release.xcconfig */,
+				3E642122538E51935288A812 /* Pods-WordamentUITests.debug.xcconfig */,
+				D9B0CC8F659A0B3971CFF20F /* Pods-WordamentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B001BDBA22F947CC00091C0B /* Build configuration list for PBXNativeTarget "Wordament" */;
 			buildPhases = (
+				514FA1858E1FA00FF0A35D5F /* [CP] Check Pods Manifest.lock */,
 				B001BD8E22F947CA00091C0B /* Sources */,
 				B001BD8F22F947CA00091C0B /* Frameworks */,
 				B001BD9022F947CA00091C0B /* Resources */,
+				E0A11580120584DC2C37A44C /* [CP] Embed Pods Frameworks */,
+				2947959F57BF97733E554924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B001BDBD22F947CC00091C0B /* Build configuration list for PBXNativeTarget "WordamentTests" */;
 			buildPhases = (
+				3E68B477BAD6EFF538D36A25 /* [CP] Check Pods Manifest.lock */,
 				B001BDA222F947CC00091C0B /* Sources */,
 				B001BDA322F947CC00091C0B /* Frameworks */,
 				B001BDA422F947CC00091C0B /* Resources */,
+				E34864CC8AF098145CE97CDC /* [CP] Embed Pods Frameworks */,
+				F0AAED8FBEDF58FF7CDE9EDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B001BDC022F947CC00091C0B /* Build configuration list for PBXNativeTarget "WordamentUITests" */;
 			buildPhases = (
+				B44DBF69180941A2BA59CC2E /* [CP] Check Pods Manifest.lock */,
 				B001BDAD22F947CC00091C0B /* Sources */,
 				B001BDAE22F947CC00091C0B /* Frameworks */,
 				B001BDAF22F947CC00091C0B /* Resources */,
+				5B0DF1D96B2E18A9591A061C /* [CP] Embed Pods Frameworks */,
+				13A0C8D253A3EBCC6857FCEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +314,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B001BDC822F94D8500091C0B /* WordamentCollectionView.xib in Resources */,
 				B001BDA022F947CC00091C0B /* LaunchScreen.storyboard in Resources */,
 				B001BD9D22F947CC00091C0B /* Assets.xcassets in Resources */,
+				B06EB4D2232265FA00102D77 /* SolutionViewController.storyboard in Resources */,
 				B001BD9B22F947CA00091C0B /* Main.storyboard in Resources */,
+				B0BAFDA123278A8B00651211 /* right_tone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +339,212 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13A0C8D253A3EBCC6857FCEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordamentUITests/Pods-WordamentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2947959F57BF97733E554924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordament/Pods-Wordament-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E68B477BAD6EFF538D36A25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordamentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		514FA1858E1FA00FF0A35D5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wordament-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0DF1D96B2E18A9591A061C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordamentUITests/Pods-WordamentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44DBF69180941A2BA59CC2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordamentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A11580120584DC2C37A44C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wordament/Pods-Wordament-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordament/Pods-Wordament-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E34864CC8AF098145CE97CDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordamentTests/Pods-WordamentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0AAED8FBEDF58FF7CDE9EDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordamentTests/Pods-WordamentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B001BD8E22F947CA00091C0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B001BDD222FC019E00091C0B /* WordamentSolver.swift in Sources */,
 				B001BD9822F947CA00091C0B /* ViewController.swift in Sources */,
+				B001BDD022F9B62200091C0B /* Colors.swift in Sources */,
+				B001BDCE22F9AA0500091C0B /* WordamentCollectionViewCell.swift in Sources */,
+				B001BDCC22F9806800091C0B /* TrieNode.swift in Sources */,
+				B001BDCA22F95B0100091C0B /* WordamentModel.swift in Sources */,
+				B001BDC622F94D3200091C0B /* NibLoadable.swift in Sources */,
+				B001BDC422F94AB300091C0B /* WordamentCollectionView.swift in Sources */,
 				B001BD9622F947CA00091C0B /* AppDelegate.swift in Sources */,
+				B0BAFD9D232656B400651211 /* SoundManager.swift in Sources */,
+				B06EB4D02322640300102D77 /* SolutionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +717,7 @@
 		};
 		B001BDBB22F947CC00091C0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6242AE15078A9928EB15CEBB /* Pods-Wordament.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +736,7 @@
 		};
 		B001BDBC22F947CC00091C0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E00C5BAAC34AC9B1E00623B /* Pods-Wordament.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +755,7 @@
 		};
 		B001BDBE22F947CC00091C0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246FFBA3FC85B1BF8D84E2F1 /* Pods-WordamentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +777,7 @@
 		};
 		B001BDBF22F947CC00091C0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F921CCC2BC22C7F0D582D19F /* Pods-WordamentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +799,7 @@
 		};
 		B001BDC122F947CC00091C0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E642122538E51935288A812 /* Pods-WordamentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +820,7 @@
 		};
 		B001BDC222F947CC00091C0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B0CC8F659A0B3971CFF20F /* Pods-WordamentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

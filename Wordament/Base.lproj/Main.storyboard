@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wordament" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-jB-T0h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5x-sl-DXK" customClass="WordamentCollectionView" customModule="Wordament" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="105" width="414" height="540"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGw-To-nWn">
+                                <rect key="frame" x="20" y="671" width="207" height="165.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qGw-To-nWn" secondAttribute="height" multiplier="10/8" id="PEO-oB-6QU"/>
+                                </constraints>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAX-R1-wjf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e1T-8I-OPT"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Wordament" id="tXT-CY-iKh">
+                                        <barButtonItem key="leftBarButtonItem" title="Restart" id="c8G-Bd-yaN"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Solution" id="i02-fx-zYh"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S5x-sl-DXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hqd-4A-BH4"/>
+                            <constraint firstAttribute="trailing" secondItem="OM1-jB-T0h" secondAttribute="trailing" id="QLu-qt-6wv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VAX-R1-wjf" secondAttribute="trailing" id="SIt-Ab-cdu"/>
+                            <constraint firstItem="OM1-jB-T0h" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XOo-ln-28B"/>
+                            <constraint firstItem="qGw-To-nWn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YYC-Oa-sGA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S5x-sl-DXK" secondAttribute="trailing" id="hsn-Pd-Ykq"/>
+                            <constraint firstItem="VAX-R1-wjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lmC-7i-jNN"/>
+                            <constraint firstItem="OM1-jB-T0h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ptK-5C-Y2L"/>
+                            <constraint firstItem="OM1-jB-T0h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rPc-NA-VK5"/>
+                            <constraint firstItem="S5x-sl-DXK" firstAttribute="top" secondItem="VAX-R1-wjf" secondAttribute="bottom" constant="25" id="rQn-mq-78A"/>
+                            <constraint firstItem="qGw-To-nWn" firstAttribute="top" secondItem="S5x-sl-DXK" secondAttribute="bottom" constant="25.5" id="uB0-bd-nJH"/>
+                            <constraint firstItem="VAX-R1-wjf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="x1S-85-XgX"/>
+                            <constraint firstItem="qGw-To-nWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yfu-QQ-DL4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VAX-R1-wjf" secondAttribute="bottom" constant="774" id="zck-Sw-FNb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mainView" destination="S5x-sl-DXK" id="QUg-jt-HBw"/>
+                        <outlet property="restartButton" destination="c8G-Bd-yaN" id="4Er-eg-O1G"/>
+                        <outlet property="solutionButton" destination="i02-fx-zYh" id="uM7-yu-vT1"/>
+                        <outlet property="wordsFoundTableView" destination="qGw-To-nWn" id="e0r-Oz-c1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue-background" width="936" height="528"/>
+    </resources>
 </document>
